@@ -86,11 +86,6 @@ Logs an event from a Lumina service.
 - `eventType` (String): The type of event.
 - `data` (Object): Additional data related to the event.
 
-#### Response
-
-- `201 Created`: Event logged successfully.
-- `500 Internal Server Error`: Error logging event.
-
 
 ## API Endpoints
 
@@ -104,12 +99,6 @@ Logs an event from a Lumina service.
 - `eventType` (String): The type of event.
 - `data` (Object): Additional data related to the event.
 
-#### Response
-
-- `201 Created`: Event logged successfully.
-- `500 Internal Server Error`: Error logging event.
-
-#### Example
 
 ```bash
 curl -X POST http://localhost:3000/api/log -H "Content-Type: application/json" -d '{
@@ -125,12 +114,6 @@ curl -X POST http://localhost:3000/api/log -H "Content-Type: application/json" -
 
 Retrieves the total number of users.
 
-#### Response
-
-- `200 OK`: Returns the total number of users.
-- `500 Internal Server Error`: Error retrieving total users.
-
-#### Example
 
 ```bash
 curl http://localhost:3000/api/metrics/total-users
@@ -140,12 +123,6 @@ curl http://localhost:3000/api/metrics/total-users
 
 Retrieves the number of active users in the past 24 hours.
 
-#### Response
-
-- `200 OK`: Returns the number of active users.
-- `500 Internal Server Error`: Error retrieving active users.
-
-#### Example
 
 ```bash
 curl http://localhost:3000/api/metrics/active-users
@@ -155,12 +132,6 @@ curl http://localhost:3000/api/metrics/active-users
 
 Retrieves the total number of events.
 
-#### Response
-
-- `200 OK`: Returns the total number of events.
-- `500 Internal Server Error`: Error retrieving total events.
-
-#### Example
 
 ```bash
 curl http://localhost:3000/api/metrics/total-events
@@ -170,12 +141,6 @@ curl http://localhost:3000/api/metrics/total-events
 
 Retrieves the average session duration for each user.
 
-#### Response
-
-- `200 OK`: Returns the average session durations.
-- `500 Internal Server Error`: Error retrieving session durations.
-
-#### Example
 
 ```bash
 curl http://localhost:3000/api/metrics/average-session-durations
@@ -185,12 +150,6 @@ curl http://localhost:3000/api/metrics/average-session-durations
 
 Retrieves the total number of nodes started.
 
-#### Response
-
-- `200 OK`: Returns the total number of nodes started.
-- `500 Internal Server Error`: Error retrieving nodes started.
-
-#### Example
 
 ```bash
 curl http://localhost:3000/api/metrics/nodes-started
@@ -200,12 +159,6 @@ curl http://localhost:3000/api/metrics/nodes-started
 
 Retrieves the total number of nodes stopped.
 
-#### Response
-
-- `200 OK`: Returns the total number of nodes stopped.
-- `500 Internal Server Error`: Error retrieving nodes stopped.
-
-#### Example
 
 ```bash
 curl http://localhost:3000/api/metrics/nodes-stopped
@@ -215,12 +168,6 @@ curl http://localhost:3000/api/metrics/nodes-stopped
 
 Retrieves the number of nodes currently running.
 
-#### Response
-
-- `200 OK`: Returns the number of nodes currently running.
-- `500 Internal Server Error`: Error retrieving currently running nodes.
-
-#### Example
 
 ```bash
 curl http://localhost:3000/api/metrics/currently-running-nodes
@@ -230,12 +177,6 @@ curl http://localhost:3000/api/metrics/currently-running-nodes
 
 Retrieves the distribution of event types.
 
-#### Response
-
-- `200 OK`: Returns the distribution of event types.
-- `500 Internal Server Error`: Error retrieving event type distribution.
-
-#### Example
 
 ```bash
 curl http://localhost:3000/api/metrics/event-type-distribution
@@ -245,12 +186,6 @@ curl http://localhost:3000/api/metrics/event-type-distribution
 
 Retrieves the header synchronization progress for each user.
 
-#### Response
-
-- `200 OK`: Returns the header synchronization progress.
-- `500 Internal Server Error`: Error retrieving header sync progress.
-
-#### Example
 
 ```bash
 curl http://localhost:3000/api/metrics/header-sync-progress
